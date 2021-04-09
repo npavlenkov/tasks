@@ -16,11 +16,14 @@ public class Testwork {
         $x("//option[@value='4']").click();
         $x("//select[@class='react-datepicker__year-select']").click();
         $x("//option[@value='1988']").click();
-        $x("//div[@class='react-datepicker__day react-datepicker__day--011'] ").click();
+        $x("//div[@class='react-datepicker__day react-datepicker__day--005'] ").click();
         $x("//input[@id='subjectsInput']").setValue("Ar");
         $x("//*[text()='Arts']").click();
         $x("//input[@id='subjectsInput']").setValue("E");
         $x("//*[text()='English']").click();
+        $x("//label[@for='hobbies-checkbox-3']").click();
+        $x("//input[@id='uploadPicture']").click();
+
 
 
 
