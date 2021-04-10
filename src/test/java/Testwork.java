@@ -22,7 +22,9 @@ public class Testwork {
         $x("//input[@id='subjectsInput']").setValue("E");
         $x("//*[text()='English']").click();
         $x("//label[@for='hobbies-checkbox-3']").click();
-        $x("//input[@id='uploadPicture']").click();
+        //$x("//input[@id='uploadPicture']").click();
+        $x("//textarea[@id='currentAddress']").setValue("shemisheika, stepnaya street");
+        $x("//div[@id='state']").click();
 
 
 
