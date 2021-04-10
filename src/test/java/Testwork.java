@@ -1,8 +1,14 @@
+import com.codeborne.selenide.Configuration;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.*;
 
 public class Testwork {
+    @BeforeAll
+    static void setup(){
+        Configuration.startMaximized = true;
+    }
     @Test
     void Form() {
         open("https://demoqa.com/automation-practice-form");
@@ -22,9 +28,13 @@ public class Testwork {
         $x("//input[@id='subjectsInput']").setValue("E");
         $x("//*[text()='English']").click();
         $x("//label[@for='hobbies-checkbox-3']").click();
-        //$x("//input[@id='uploadPicture']").click();
+        //$x("//input[@id='uploadPicture']").uploadFromClasspath("img/battletoads.zip");
         $x("//textarea[@id='currentAddress']").setValue("shemisheika, stepnaya street");
-        $x("//div[@id='state']").click();
+        $x("//div[@class=' css-1wa3eu0-placeholder']").click();
+        $x("//*[text()='NCR']").click();
+        $x("//div[@class=' css-1wa3eu0-placeholder']").click();
+        $x("//*[text()='Delhi']").click();
+        $x("//button[@id='submit']").click();
 
 
 
