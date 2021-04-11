@@ -28,7 +28,7 @@ public class Testwork {
         $x("//input[@id='subjectsInput']").setValue("E");
         $x("//*[text()='English']").click();
         $x("//label[@for='hobbies-checkbox-3']").click();
-        //$x("//input[@id='uploadPicture']").uploadFromClasspath("img/battletoads.zip");
+        $x("//input[@id='uploadPicture']").sendKeys("C://banner.png");
         $x("//textarea[@id='currentAddress']").setValue("shemisheika, stepnaya street");
         $x("//div[@class=' css-1wa3eu0-placeholder']").click();
         $x("//*[text()='NCR']").click();
