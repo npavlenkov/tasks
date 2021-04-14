@@ -11,6 +11,7 @@ public class Testwork2 {
         Configuration.startMaximized = true;
 
     }
+
     @Test
     void FormSelenide() {
 
@@ -21,9 +22,6 @@ public class Testwork2 {
         $x("//li[@class='Box-row'][last()]").click();
         $x("//ol[@start='3']").scrollTo();
         $x("//ol[@start='3']").shouldHave(text("Using JUnit5 extend test class:"));
-
-
-        sleep(5000);
 
 
     }
