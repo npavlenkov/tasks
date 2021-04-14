@@ -15,9 +15,9 @@ public class Testwork {
     }
 
     String
-            firstName = "Stas",
-            lastName = "Stasov",
-            userEmail = "Stasov@input.su",
+            firstName = "Фёдор",
+            lastName = "Павленков",
+            userEmail = "fedor130413@gmail.com",
             userNumber = "9874520123",
             picture = "banner.png",
             state = "NCR",
