@@ -49,6 +49,7 @@ public class Testwork {
         $x("//div[@id='hobbiesWrapper']//label[text()='"+hobby3+"']").click();
         $x("//input[@id='uploadPicture']").uploadFromClasspath("img/" + picture);
         $x("//textarea[@id='currentAddress']").setValue("shemisheika, stepnaya street");
+        $x("//div[@id='state']").scrollTo();
         $x("//div[@id='state']").click();
         $x("//div[contains(@id,'react-select')][text()='" + state + "']").click();
         $x("//div[@id='city']").click();
