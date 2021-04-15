@@ -23,7 +23,12 @@ public class Testwork {
             state = "NCR",
             city = "Delhi",
             hobby3 = "Music",
-            Gender = "Female";
+            Gender = "Female",
+            Date_of_Birth = "11 May,1988",
+            subjects = "Arts, English",
+            Address ="shemisheika, stepnaya street",
+            State_and_City = "NCR Delhi";
+
 
 
     @Test
@@ -59,15 +64,14 @@ public class Testwork {
         //Проверка формы
         Assertions.assertEquals($x("//td[text()='Student Name']/parent::tr/td[2]").getText(), firstName + " " + lastName, "не найдено искомое");
         $x("//td[text()='Student Email']").parent().shouldHave(text(userEmail));
-//        $x("//td[text()='Gender']").parent().shouldHave(text("Female"));
         Assertions.assertEquals($x("//td[text()='Gender']/parent::tr/td[2]").getText(), Gender);
         $x("//td[text()='Mobile']").parent().shouldHave(text(userNumber));
-        $x("//td[text()='Date of Birth']").parent().shouldHave(text("11 May,1988"));
-        $x("//td[text()='Subjects']").parent().shouldHave(text("Arts, English"));
+        $x("//td[text()='Date of Birth']").parent().shouldHave(text(Date_of_Birth));
+        $x("//td[text()='Subjects']").parent().shouldHave(text(subjects));
         $x("//td[text()='Hobbies']").parent().shouldHave(text(hobby3));
         $x("//td[text()='Picture']").parent().shouldHave(text("banner"));
-        $x("//td[text()='Address']").parent().shouldHave(text("shemisheika, stepnaya street"));
-        $x("//td[text()='State and City']").parent().shouldHave(text("NCR Delhi"));
+        $x("//td[text()='Address']").parent().shouldHave(text(Address));
+        $x("//td[text()='State and City']").parent().shouldHave(text(State_and_City));
 
 
         sleep(5000);
