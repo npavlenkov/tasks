@@ -18,8 +18,8 @@ public class Testwork2 {
         open("https://github.com/selenide/selenide");
         $x("//span[@data-content='Wiki']").click();
         $x("//div[@class=' js-wiki-sidebar-toggle-display']").shouldHave(text("SoftAssertions"));
-//        $x("//li[@class='Box-row'][last()]").scrollTo();
-//        $x("//li[@class='Box-row'][last()]").click();
+        $x("//li[@class='Box-row'][last()]").scrollTo();
+        $x("//li[@class='Box-row'][last()]").click();
         $x("//ol[@start='3']").scrollTo();
         $x("//ol[@start='3']").shouldHave(text("Using JUnit5 extend test class:"));
 
